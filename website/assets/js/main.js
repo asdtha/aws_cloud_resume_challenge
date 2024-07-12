@@ -154,13 +154,13 @@
 
 //counter
 
-const counter = document.querySelector(".counter");
-async function updateCounter(){
-	let response = await fetch("https://dv7ndtqitop4l7r6ypgpmakptm0mvuer.lambda-url.us-east-1.on.aws/");
-	let data = await response.json();
-	counter.innerHTML = `Views: ${data}`;
-}
-updateCounter();
+// const counter = document.querySelector(".counter");
+// async function updateCounter(){
+// 	let response = await fetch("https://dv7ndtqitop4l7r6ypgpmakptm0mvuer.lambda-url.us-east-1.on.aws/");
+// 	let data = await response.json();
+// 	counter.innerHTML = `Views: ${data}`;
+// }
+// updateCounter();
 
 const textElement = document.getElementById('dynamicText');
 		const textsToType = ["Cloud Engineer", "DevOps Engineer"];
