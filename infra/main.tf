@@ -15,7 +15,7 @@ resource "aws_lambda_function_url" "lambda_url" {
 
   cors {
     allow_credentials = false
-    allow_origins     = ["*"]
+    allow_origins     = ["https://resume.tdaza.com"]
     allow_methods     = ["*"]
     allow_headers     = ["*"]
     expose_headers    = ["*"]
