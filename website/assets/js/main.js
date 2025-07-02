@@ -154,25 +154,25 @@
 
 //counter
 
-// const counter = document.querySelector(".counter");
-// async function updateCounter(){
-// 	let response = await fetch("https://dv7ndtqitop4l7r6ypgpmakptm0mvuer.lambda-url.us-east-1.on.aws/");
-//  	let data = await response.json();
-//  	counter.innerHTML = `Views: ${data}`;
-//  }
-//  updateCounter();
+const counter = document.querySelector(".counter");
+async function updateCounter(){
+	let response = await fetch("https://dv7ndtqitop4l7r6ypgpmakptm0mvuer.lambda-url.us-east-1.on.aws/");
+ 	let data = await response.json();
+ 	counter.innerHTML = `${data}`;
+ }
+ updateCounter();
 
-const counter = document.getElementById("viewCount");
+//const counter = document.getElementById("viewCount");
 
-async function updateCounter() {
-  try {
-    let response = await fetch("https://dv7ndtqitop4l7r6ypgpmakptm0mvuer.lambda-url.us-east-1.on.aws/");
-    let data = await response.json();
-    counter.textContent = data;
-  } catch (error) {
-    counter.textContent = "Error fetching data";
-  }
-}
+// async function updateCounter() {
+//   try {
+//     let response = await fetch("https://dv7ndtqitop4l7r6ypgpmakptm0mvuer.lambda-url.us-east-1.on.aws/");
+//     let data = await response.json();
+//     counter.textContent = data;
+//   } catch (error) {
+//     counter.textContent = "Error fetching data";
+//   }
+// }
 
 updateCounter();
 
