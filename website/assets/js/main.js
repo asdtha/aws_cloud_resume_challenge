@@ -163,7 +163,7 @@ async function updateCounter(){
  updateCounter();
 
 const textElement = document.getElementById('dynamicText');
-		const textsToType = ["Cloud Engineer", "DevOps Engineer"];
+		const textsToType = ["Cloud Engineer", "AWS SAA", "DevOps Engineer"];
 		let textIndex = 0;
 		let charIndex = 0;
 		let isDeleting = false;
